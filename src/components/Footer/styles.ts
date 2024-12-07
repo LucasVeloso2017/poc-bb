@@ -1,32 +1,24 @@
 import styled from "styled-components";
 
-export const FooterContainer = styled.div`
-  padding: 1rem 0;
-  width: 144.0rem;
+export const Container = styled.div`
+  width: 100%;
   height: 6.2rem;
-`;
-
-export const Container = styled.footer`
-  background-color: white;
-  margin: 0 auto;
-  padding: 0 1rem;
+  background-color: #FFF;
+  padding-top: 2.2rem;
+  padding-bottom: 2.3rem;
 
   display: flex;
-  flex-direction: row;
-
-  p {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: black;
-    font-style: normal;
-  }
-
-  span {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    font-style: normal;
-    color: turquoise;
-  }
+  justify-content: flex-end;
 `;
+
+export const Brands = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.9rem;
+  margin-right: 10.8rem;
+
+  img:nth-child(1){
+    margin-top: 1.6rem;
+  }
+`
