@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import App from './App';
+import { SignIn } from "./pages/SignIn";
 // import { Container } from './styles';
 
 const AppRoutes = () => {
   return(
    <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/"  index element={<SignIn />} />
     </Routes>
    </BrowserRouter>
   );
