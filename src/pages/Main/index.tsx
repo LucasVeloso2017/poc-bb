@@ -4,13 +4,10 @@ import FullscreenIcon from '../../assets/fullscreen-icon.svg'
 
 import * as S from './styles';
 
-import { Header } from '../../components/Header';
 
 const Main: React.FC = () => {
   return(
    <S.Container>
-      <Header />
-      <br /><br />
       <S.PageHeader>
          <div className='title'>
             <img src={IntegrationIcon} alt="integration-icon" />

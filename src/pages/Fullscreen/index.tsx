@@ -12,7 +12,6 @@ const Fullscreen: React.FC = () => {
    const fakeArr = Array.from({ length: 10 })
   return(
    <S.Container>
-      <br /><br />
       <div className="row">
          <S.DatalayerViews>
             <div className='title'>
