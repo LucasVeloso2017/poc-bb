@@ -14,10 +14,10 @@ const AppRoutes = () => {
         <Route path="/" element={<SignIn />} />
       </Route>
 
-    <Route element={<PagesLayout />}>
-      <Route path="/main" element={<Main />} />
-      <Route path="/fullscreen" element={<Fullscreen />} />
-    </Route>
+      <Route element={<PagesLayout />}>
+        <Route path="/main" element={<Main />} />
+        <Route path="/fullscreen" element={<Fullscreen />} />
+      </Route>
     </Routes>
 
 
