@@ -12,11 +12,11 @@ export function SignIn() {
 
           <div className="input-wrapper">
             <label htmlFor="mail">E-mail / CPF</label>
-            <input type="email" />
+            <input type="email" id="mail"/>
           </div>
           <div className="input-wrapper">
-            <label htmlFor="mail">Senha</label>
-            <input type="password" />
+            <label htmlFor="password">Senha</label>
+            <input type="password" id="password" />
           </div>
           <div className="buttons">
             <button className="submit">Acessar</button>
