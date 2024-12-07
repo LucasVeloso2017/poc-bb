@@ -1,11 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import { SignIn }  from "./pages/SignIn";
 import PagesLayout from "./layout/PagesLayout";
-import Main from "./pages/Main";
 import Fullscreen from "./pages/Fullscreen";
 import LoginLayout from "./layout/LoginLayout";
 import AllIntegrations from "./pages/Integrations/All";
-// import { Container } from './styles';
+import IntegrationsDashboard from "./pages/Integrations/Dashboard";
 
 const AppRoutes = () => {
   return(
@@ -16,11 +15,11 @@ const AppRoutes = () => {
       </Route>
 
       <Route element={<PagesLayout />}>
-        <Route path="/main" element={<Main />} />
-        <Route path="/fullscreen" element={<Fullscreen />} />
       </Route>
 
       <Route path="/integrations" element={<PagesLayout />}>
+        <Route path="/integrations" index element={<IntegrationsDashboard />} />
+        <Route path="/integrations/fullscreen" element={<Fullscreen />} />
         <Route path="/integrations/all" element={<AllIntegrations />} />
       </Route>
 
