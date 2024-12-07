@@ -3,12 +3,15 @@ import { SignIn } from "./pages/SignIn";
 import Main from "./pages/Main";
 import PagesLayout from "./layout/PagesLayout";
 import Fullscreen from "./pages/Fullscreen";
+import LoginLayout from "./layout/LoginLayout";
 
 const AppRoutes = () => {
   return(
    <BrowserRouter>
     <Routes>
-      <Route path="/"  index element={<SignIn />} />
+      <Route element={<LoginLayout />}>
+        <Route path="/"  index element={<SignIn />} />
+      </Route>
       
       <Route element={<PagesLayout />}>
         <Route path="/main" element={<Main />} />
