@@ -8,6 +8,7 @@ export const Container = styled.header`
   height: 6.6rem;
   background-color: #fff;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 3.8rem;
 `;
 
 export const LogoWrapper = styled.div`
