@@ -1,11 +1,19 @@
 import React from 'react';
-import IntegrationIcon from '../../assets/integrations-icon.svg'
-import FullscreenIcon from '../../assets/fullscreen-icon.svg'
+import IntegrationIcon from '../../../assets/integrations-icon.svg'
+import FullscreenIcon from '../../../assets/fullscreen-icon.svg'
 
 import * as S from './styles';
+import Button from '../../../components/Button';
+import { useNavigate } from 'react-router';
 
 
-const Main: React.FC = () => {
+const IntegrationsDashboard: React.FC = () => {
+   const navigate = useNavigate()
+
+   const handleGoToFullscreen = () =>{
+      navigate("/integrations/fullscreen")
+   }
+
   return(
    <S.Container>
       <S.PageHeader>
@@ -13,9 +21,13 @@ const Main: React.FC = () => {
             <img src={IntegrationIcon} alt="integration-icon" />
             <span>Integrações</span>
          </div>
-         <button>
-            <img src={FullscreenIcon} alt="integration-icon" />
-         </button>
+         <Button
+            onClick={handleGoToFullscreen}
+            withIcon={{
+               icon:FullscreenIcon,
+               onlyIcon:true
+            }}
+         />
       </S.PageHeader>
       <S.Card>
          <S.DashboardWrapper>
@@ -53,4 +65,4 @@ const Main: React.FC = () => {
   );
 }
 
-export default Main;
+export default IntegrationsDashboard;
