@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import LoginBackground from "../../assets/LoginImg.png";
+import LoginBackground from "../../assets/login-cover.png";
 
 export const Container = styled.div`
   width: 100%;

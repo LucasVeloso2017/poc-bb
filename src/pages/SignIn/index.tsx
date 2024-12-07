@@ -2,7 +2,7 @@ import { Container, Background, FormContainer, Title } from "./styled";
 
 import { Footer } from "../../components/Footer";
 
-import Logo from "../../assets/image.png";
+import Logo from "../../assets/sesi-logo.png";
 
 export function SignIn() {
   return(
