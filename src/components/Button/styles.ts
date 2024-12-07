@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 type ContainerProps ={
    isBrandVariant?:boolean
+   isBrandOutlinedVariant?:boolean
 }
 
 export const Container = styled.button<ContainerProps>`
@@ -38,6 +39,24 @@ export const Container = styled.button<ContainerProps>`
          color: #FFF;
          font-weight:600;
          font-size: 1.4rem;
+      }
+   `}
+
+   ${({isBrandOutlinedVariant}) => isBrandOutlinedVariant && css`
+      border: none;
+      background-color: #FFF;
+      border:0.1rem solid #00AEBA;
+
+      span{
+         font-family: "Noto Sans", sans-serif;
+         font-style: normal;
+         color: #00AEBA;
+         font-weight:600;
+         font-size: 1.4rem;
+      }
+
+      .filter-icon{
+         background-color: red;
       }
    `}
 `; 
