@@ -1,14 +1,12 @@
 import { BoxTable, BoxWrapper, Container, Display, GraphicDisplay, TextLink, TimeGraphic } from "./styles";
 
-import { Header } from "../../components/Header";
-import GoLeft from "../../assets/chevron-left.png";
-import Arrows from "../../assets/arrows.svg";
-import Clock from "../../assets/clock.svg";
+import GoLeft from "../../../assets/chevron-left.png";
+import Arrows from "../../../assets/arrows.svg";
+import Clock from "../../../assets/clock.svg";
 
-export function StatisticalGraphs() {
+function IntegrationDetail() {
   return(
     <Container>
-      <Header />
       <TextLink>
         <img src={GoLeft} alt="Seta para a esquerda" />
         <h1>Integração Plurall</h1>
@@ -59,3 +57,5 @@ export function StatisticalGraphs() {
     </Container>
   );
 }
+
+export default IntegrationDetail
