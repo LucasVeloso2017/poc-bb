@@ -1,6 +1,4 @@
-import { Container, Background, FormContainer, Title } from "./styled";
-
-import { Footer } from "../../components/Footer";
+import { Container, Background, FormContainer } from "./styled";
 
 import Logo from "../../assets/sesi-logo.png";
 
@@ -9,30 +7,24 @@ export function SignIn() {
     <Container>
       <Background>
         <img src={Logo} alt="Logo do app" />
-
         <FormContainer>
-          <div>
-            <Title>Faça seu login</Title>
+          <h1>Faça seu login</h1>
 
-            <label>
-              E-mail/CPF
-              <input type="text" />
-            </label>
-
-            <label>
-              Senha
-              <input type="password" />
-            </label>
-
-            <div className="buttons">
-              <button className="first">Acessar</button>
-              <button className="second">Entrar com Microsoft</button>
-            </div>
+          <div className="input-wrapper">
+            <label htmlFor="mail">E-mail / CPF</label>
+            <input type="email" />
+          </div>
+          <div className="input-wrapper">
+            <label htmlFor="mail">Senha</label>
+            <input type="password" />
+          </div>
+          <div className="buttons">
+            <button className="submit">Acessar</button>
+            <button className="ms-auth">Entrar com Microsoft</button>
             <a href="#">Esqueci minha senha</a>
           </div>
-        </FormContainer>
+        </FormContainer> 
       </Background>
-      <Footer />
     </Container>
   );
 }

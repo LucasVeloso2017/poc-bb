@@ -5,93 +5,114 @@ import LoginBackground from "../../assets/login-cover.png";
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
+
 `;
 
 export const Background = styled.div`
   width: 100%; 
-  flex: 1;
+  height: 100vh;
   background: url(${LoginBackground}) no-repeat center;
   background-size: cover;
 
-  > img {
-    width: 38%;
-    height: auto;
-
-    padding: 6.0rem 11.6rem 0 9.0rem;
+  img {
+    width: 26.7rem;
+    height: 10.8rem;
+    margin: 6.0rem 11.6rem 0 9.0rem;
   }
 `;
 
 export const FormContainer = styled.form`
+  width: 45rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  gap: 1.4rem;
+  background-color: #FFFF;
+  padding: 2.5rem 1.8rem;
+  border-radius: 1rem;
 
-  > div {
-    width: 45.0rem;
-    height: 45.0rem;
-    flex-shrink: 0;
+  h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 2.0rem;
+    font-weight: 700;
+    font-style: normal;
+  }
 
-    background-color: white;
-    border-radius: 2rem;
-
+  .input-wrapper{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2.2rem;
-  }
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:0.4rem;
 
-  label {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 400;
-    color: gray;
-  }
+    label {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      color: gray;
+    }
 
-  input {
-    display: flex;
-    height: 3.6rem;
-    width: 40rem;
-    margin-top: 1rem;
-    border: 1px solid #cecece;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-    border-radius: 0.6rem;
+    input {
+      display: flex;
+      width: 100%;
+      border: 1px solid #cecece;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1.6rem;
+      outline: none;
+      transition: all 0.3s ease-in-out;
+      border-radius: 0.4rem;
+      font-size: 1.4rem;
+      color: gray;
+    }
   }
 
   .buttons {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-  }
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
 
-  .first {
-    width: 40rem;
-    height: 5.4rem;
-    background-color: turquoise;
-    border-radius: 0.5rem;
-    
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 500;
-    font-style: normal;
-  }
+    button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
 
-  .second {
-    width: 40rem;
-    height: 5.4rem;
-    background-color: white;
-    border-radius: 0.5rem;
-    
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 500;
-    font-style: normal;
+    .submit{
+      width: 100%;
+      height: 5.6rem;
+      background-color: #03BAC6;
+      border-radius: 0.5rem;
+      
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .ms-auth{
+      width: 100%;
+      height: 5.6rem;
+      background-color: #FFF;
+      border-radius: 0.5rem;
+      border:0.1rem solid black;
+      
+      color: black;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+      font-style: normal;
+    }
   }
 
   a {
@@ -100,15 +121,5 @@ export const FormContainer = styled.form`
     font-weight: 400;
     text-decoration: none;
     color: black;
-  }
-`;
-
-export const Title = styled.h3`
-  font-family: 'Inter', sans-serif;
-  font-size: 2.0rem;
-  font-weight: 700;
-  font-style: normal;
-  color: black;
-
-  margin: 3rem 26rem 2rem 0;
+  } 
 `;
