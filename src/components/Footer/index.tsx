@@ -1,11 +1,15 @@
-import { FooterContainer, Container} from "./styles";
+import * as S from "./styles";
+
+import Powered from '../../assets/powered-bb.svg'
+import Group from '../../assets/bb-ms-group.svg'
 
 export function Footer() {
   return(
-    <FooterContainer>
-      <Container>
-        <p>Powered by <span>Big Brain</span></p>
-      </Container>
-    </FooterContainer>
+    <S.Container id="footer">
+      <S.Brands>
+        <img src={Powered} alt="" />
+        <img src={Group} alt="" />
+      </S.Brands>
+    </S.Container>
   );
 }
