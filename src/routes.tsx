@@ -5,6 +5,7 @@ import Fullscreen from "./pages/Fullscreen";
 import LoginLayout from "./layout/LoginLayout";
 import AllIntegrations from "./pages/Integrations/All";
 import IntegrationsDashboard from "./pages/Integrations/Dashboard";
+// import { Container } from './styles';
 
 const AppRoutes = () => {
   return(
@@ -13,10 +14,7 @@ const AppRoutes = () => {
       <Route element={<LoginLayout/>}>
         <Route path="/" index element={<SignIn />} />
       </Route>
-
-      <Route element={<PagesLayout />}>
-      </Route>
-
+    
       <Route path="/integrations" element={<PagesLayout />}>
         <Route path="/integrations" index element={<IntegrationsDashboard />} />
         <Route path="/integrations/fullscreen" element={<Fullscreen />} />
