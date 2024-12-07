@@ -4,6 +4,7 @@ import PagesLayout from "./layout/PagesLayout";
 import Main from "./pages/Main";
 import Fullscreen from "./pages/Fullscreen";
 import LoginLayout from "./layout/LoginLayout";
+import { StatisticalGraphs } from "./pages/StatisticalGraphs";
 // import { Container } from './styles';
 
 const AppRoutes = () => {
@@ -17,6 +18,7 @@ const AppRoutes = () => {
       <Route element={<PagesLayout />}>
         <Route path="/main" element={<Main />} />
         <Route path="/fullscreen" element={<Fullscreen />} />
+        <Route path="/statisticalgraphs" element={<StatisticalGraphs />} />
       </Route>
     </Routes>
 
