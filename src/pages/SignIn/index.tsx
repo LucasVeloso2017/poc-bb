@@ -8,12 +8,12 @@ export function SignIn() {
       <Background>
         <img src={Logo} alt="Logo do app" />
         <FormContainer>
-          <h1>Faça seu login</h1>
+          {/* <h1>Faça seu login</h1> */}
 
-          <div className="input-wrapper">
+          {/* <div className="input-wrapper">
             <label htmlFor="mail">E-mail / CPF</label>
             <input type="email" id="mail"/>
-          </div>
+          </div> */}
           <div className="input-wrapper">
             <label htmlFor="password">Senha</label>
             <input type="password" id="password" />
