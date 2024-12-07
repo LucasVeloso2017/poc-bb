@@ -105,3 +105,12 @@ export const ProfileText = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const FullscreenFiltersWrapper = styled.div`
+    display: flex;
+    flex:1 1 auto;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 5rem;
+`
