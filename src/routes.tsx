@@ -5,6 +5,7 @@ import PagesLayout from "./layout/PagesLayout";
 import Main from "./pages/Main";
 import Fullscreen from "./pages/Fullscreen";
 import LoginLayout from "./layout/LoginLayout";
+import { ComplementaryIntegration } from "./pages/ComplementaryIntegration";
 // import { Container } from './styles';
 
 const AppRoutes = () => {
@@ -14,6 +15,7 @@ const AppRoutes = () => {
       <Route element={<LoginLayout/>}>
         <Route path="/" element={<SignIn />} />
         <Route path="/integrationpage" element={<IntegrationPage />} />
+        <Route path="/complementaryintegration" element={<ComplementaryIntegration />} />
       </Route>
 
       <Route element={<PagesLayout />}>
