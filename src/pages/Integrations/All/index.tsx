@@ -9,13 +9,12 @@ import Input from '../../../components/Input';
 import Button from '../../../components/Button';
 
 
-const AllIntegrations: React.FC = () => {
+const AllIntegrations = () => {
+
   return(
    <S.Container>
-      <br />
-      <br />
       <S.HeaderRow>
-         <a href="#">
+         <a href="/integrations">
             <img src={ChevronIcon} />
             Todas as Integrações
          </a>
