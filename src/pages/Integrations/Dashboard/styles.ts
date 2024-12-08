@@ -45,13 +45,17 @@ export const Card = styled.div`
    border-radius: 1rem;
    border:0.1rem solid #D2D9DA;
    background-color: #ffff;
-   padding: 1.8rem 1.9rem;
 `
+
 export const DashboardWrapper = styled.div`
    width: 100%;
    display: flex;
    align-items: center;
    justify-content: center;
+   margin-bottom: 3.1rem;
+   padding-top: 1.9rem;
+   padding-left: 1.8rem;
+   padding-right: 1.8rem;
 `
 export const DataView = styled.div`
    width: 50%;

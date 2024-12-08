@@ -5,6 +5,7 @@ import FullscreenIcon from '../../../assets/fullscreen-icon.svg'
 import * as S from './styles';
 import Button from '../../../components/Button';
 import { useNavigate } from 'react-router';
+import DataLayerList from './components/DataLayerList';
 
 
 const IntegrationsDashboard: React.FC = () => {
@@ -31,7 +32,6 @@ const IntegrationsDashboard: React.FC = () => {
       </S.PageHeader>
       <S.Card>
          <S.DashboardWrapper>
-
             <S.DataView>
                <S.MapFilter>
                   <div className="title">
@@ -43,7 +43,6 @@ const IntegrationsDashboard: React.FC = () => {
                   </div>
                </S.MapFilter>
             </S.DataView>
-
             <S.DataView>
                <S.DoughnutFilter>
                   <div className="title-wrapper">
@@ -55,12 +54,15 @@ const IntegrationsDashboard: React.FC = () => {
                   <div className="doughnut">
                      a
                   </div>
-                  
-                  
                </S.DoughnutFilter>
             </S.DataView>
          </S.DashboardWrapper>
+         <DataLayerList/>
       </S.Card>
+         <br />
+         <br />
+         <br />
+         a
    </S.Container>
   );
 }
