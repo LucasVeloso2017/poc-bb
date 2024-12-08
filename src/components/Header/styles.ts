@@ -56,6 +56,9 @@ export const TabsWrapper = styled.div`
   }
 
   .active {
+    a{
+      font-weight: 600;
+    }
     a::before {
       content: "";
       position: absolute;
