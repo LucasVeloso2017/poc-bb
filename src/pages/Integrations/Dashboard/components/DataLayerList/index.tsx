@@ -19,6 +19,10 @@ const DataLayerList: React.FC = () => {
       navigate('/integrations/all')
    }
 
+   const handleGoToIntegrationDetail = () => {
+      navigate('/integrations/detail/1')
+   }
+
    const columns = [
       {
          headerCell: (
@@ -114,6 +118,7 @@ const DataLayerList: React.FC = () => {
                <div className="row">
                   <span>3560</span>
                   <Button
+                     onClick={handleGoToIntegrationDetail}
                      withIcon={{
                         icon:ChevronIcon,
                         onlyIcon:true
