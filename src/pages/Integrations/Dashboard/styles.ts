@@ -41,6 +41,7 @@ export const PageHeader = styled.div`
 `
 
 export const Card = styled.div`
+   overflow: hidden;
    width: 100%;
    border-radius: 1rem;
    border:0.1rem solid #D2D9DA;

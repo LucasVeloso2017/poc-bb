@@ -62,7 +62,6 @@ const IntegrationsDashboard: React.FC = () => {
          <br />
          <br />
          <br />
-         a
    </S.Container>
   );
 }
