@@ -5,6 +5,7 @@ import Fullscreen from "./pages/Fullscreen";
 import LoginLayout from "./layout/LoginLayout";
 import AllIntegrations from "./pages/Integrations/All";
 import IntegrationsDashboard from "./pages/Integrations/Dashboard";
+import IntegrationsDetail from "./pages/Integrations/Detail";
 // import { Container } from './styles';
 
 const AppRoutes = () => {
@@ -19,8 +20,8 @@ const AppRoutes = () => {
         <Route path="/integrations" index element={<IntegrationsDashboard />} />
         <Route path="/integrations/fullscreen" element={<Fullscreen />} />
         <Route path="/integrations/all" element={<AllIntegrations />} />
+        <Route path="/integrations/detail/:id" element={<IntegrationsDetail />} />
       </Route>
-
     </Routes>
    </BrowserRouter>
   );
