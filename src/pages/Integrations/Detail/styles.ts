@@ -253,6 +253,7 @@ export const TimestampMetric = styled.div`
     height: 100%;
   }
 `;
+
 export const EdTechDatalog = styled.div`
   width: 100%;
   padding-top: 1.3rem;
