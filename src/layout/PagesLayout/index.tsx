@@ -12,12 +12,12 @@ const PagesLayout = () => {
   }, [pathname]);
 
   return(
-    <>
+    <S.Wrapper>
       <Header/>
       <S.Container>
         <Outlet/>
       </S.Container>
-   </>
+   </S.Wrapper>
 
   );
 }
