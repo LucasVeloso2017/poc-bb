@@ -55,8 +55,5 @@ export const Container = styled.button<ContainerProps>`
          font-size: 1.4rem;
       }
 
-      .filter-icon{
-         background-color: red;
-      }
    `}
 `; 
