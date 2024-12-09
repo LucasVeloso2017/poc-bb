@@ -278,8 +278,6 @@ export const EdTechDatalogStatusTableCollumn = styled.div`
   }
 
   .table-row {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     padding-left: 2.2rem;
     width: 100%;
     display: flex;
@@ -324,8 +322,6 @@ export const EdTechDatalogDescriptionTableCollumn = styled.div`
   }
 
   .table-row {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -358,8 +354,6 @@ export const EdTechDatalogDateStartTableCollumn = styled.div`
   }
 
   .table-row {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -392,8 +386,6 @@ export const EdTechDatalogDateEndTableCollumn = styled.div`
   }
 
   .table-row {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -426,8 +418,6 @@ export const EdTechDatalogLatencyTableCollumn = styled.div`
   }
 
   .table-row {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -460,8 +450,6 @@ export const EdTechDatalogProcessTableCollumn = styled.div`
   }
 
   .table-row {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -494,8 +482,6 @@ export const EdTechDatalogErrorTableCollumn = styled.div`
   }
 
   .table-row {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
