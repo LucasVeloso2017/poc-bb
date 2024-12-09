@@ -7,6 +7,10 @@ export const GlobalStyles = createGlobalStyle`
       box-sizing: border-box;
       font-size: 10px;
    }
+
+   body{
+      height: 100vh;
+   }
 `
 
 //1rem = 10px
