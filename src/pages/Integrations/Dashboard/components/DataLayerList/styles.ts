@@ -69,62 +69,62 @@ export const FilterWrapper = styled.div`
 `;
 
 const BaseColumn = styled.div`
-    .header{
-      padding-top: 2.1rem;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      span {
-         font-family: "Noto Sans", sans-serif;
-         font-size: 1.4rem;
-         font-style: normal;
-         font-weight: 700;
-         text-decoration: none;
-         color: #9da8a9;
-      }
+  .header {
+    padding-top: 2.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    span {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 700;
+      text-decoration: none;
+      color: #9da8a9;
     }
+  }
 
-   .row{
-      width: 100%;
-      span {
-         font-family: "Noto Sans", sans-serif;
-         font-size: 1.4rem;
-         font-style: normal;
-         font-weight: 400;
-         color: #354344;
-      }
-   }
-`
+  .row {
+    width: 100%;
+    span {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      color: #354344;
+    }
+  }
+`;
 
 export const IntegrationNameTableColumn = styled(BaseColumn)`
   width: 20.1rem;
 
-  .header{
+  .header {
     padding-left: 2.7rem;
   }
   .row {
-      padding-left: 2.7rem;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: 1.8rem;
+    padding-left: 2.7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.8rem;
 
-      img{
-         width: 3.4rem;
-         height: 3.3rem;
-      }
-   }
+    img {
+      width: 3.4rem;
+      height: 3.3rem;
+    }
+  }
 `;
 
 export const IntegrationTypeTableColumn = styled(BaseColumn)`
   width: 10.3rem;
 
   .row {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -132,10 +132,10 @@ export const IntegrationOriginDestinyTableColumn = styled(BaseColumn)`
   width: 30.3rem;
 
   .row {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -143,10 +143,10 @@ export const IntegrationCreatedAtTableColumn = styled(BaseColumn)`
   width: 11.2rem;
 
   .row {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -154,10 +154,10 @@ export const IntegrationStatusTableColumn = styled(BaseColumn)`
   width: 25.2rem;
 
   .row {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 `;
 
@@ -165,19 +165,19 @@ export const IntegrationProcessTableColumn = styled(BaseColumn)`
   width: 25.3rem;
 
   .header {
-      span {
-         text-align: start;
-      }
-   }
+    span {
+      text-align: start;
+    }
+  }
   .row {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      button{
-         img{
-            transform: rotate(180deg);
-         }
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+      img {
+        transform: rotate(180deg);
       }
+    }
   }
 `;
