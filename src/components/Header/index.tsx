@@ -43,15 +43,15 @@ export function Header() {
         <>
           <TabsWrapper>
             <div className={`item ${isIntegrationsActiveTab && "active"}`}>
-              <a href="#">Integração</a>
+              <a href="/integrations">Integração</a>
             </div>
 
             <div className={`item ${isIdentityActiveTab && "active"}`}>
-              <a href="#">Identidade</a>
+              <a href="/identity">Identidade</a>
             </div>
 
             <div className={`item ${isDataActiveTab && "active"}`}>
-              <a href="#">Dados</a>
+              <a href="/data">Dados</a>
             </div>
 
             <div className={`item ${isAgentActiveTab && "active"}`}>
